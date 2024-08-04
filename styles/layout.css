@@ -1,0 +1,57 @@
+#app{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--shape-bg);
+    gap: 1.25rem;
+    padding: 1.25rem;
+    
+}
+
+main{
+    overflow: auto;
+    background-color: var(--shape-body);
+    border-radius: 0.75rem;
+    padding: 80px 0;
+  & .main-container{
+    max-width: 36rem;
+    margin: auto;
+
+   & h1{
+    font: var(--heading-md);
+    color: var(--text-heading);
+   }
+
+  }
+   
+}
+
+aside{
+      background-image: url(../assets/images/Background.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    
+   
+     border-radius: 0.75rem;
+
+    & .aside-container{
+        padding: 2rem;
+       
+    }
+    & img{
+       
+        width: 2.866rem;
+        height: auto;
+    }
+    & h1{
+        padding-top: 1rem;
+         font:400 2.5rem var( --font-family-leckerli);
+         color: #FF5959;
+    }
+    & p{
+        padding-top: 0.25rem;
+        font: var(--text-sm);
+    }
+}

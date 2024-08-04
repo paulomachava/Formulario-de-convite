@@ -1,0 +1,85 @@
+input,textarea,select{
+    appearance: none;
+    width: 100%;
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+    padding: .75rem 1rem;
+    font: var(--text-md);
+    background-color: var(--input-base);
+    color: var(--text-body);
+    margin-block: 1rem;
+}
+label{
+
+    font:var(--text-sm) ;
+    color: var(--text-body);
+    
+}
+input:focus, select:focus,textarea:focus, input[typee="date"]:focus-within{
+    outline: 1px solid var(--brand-light);
+}
+
+input[type="datetime-local"]{
+    text-transform: uppercase;
+    &::-webkit-calendar-picker-indicator{
+        opacity: 0;
+    }
+}
+
+
+
+.input-colors{
+    display: flex;
+    justify-content: space-between;
+
+    & input{
+        width:28px;
+        height:28px;
+        padding: 4px;
+        border-radius: 999px;
+       
+        
+         &:nth-child(1){
+            background-color: #59B2FF;
+         }
+         &:nth-child(2){
+          background-color: #6A59FF;
+         }
+         &:nth-child(3){
+            background-color: #B259FF;
+         }
+         &:nth-child(4){
+          background-color: #FF59F9;
+         }
+         &:nth-child(5){
+            background-color: #FF598B;
+         }
+         &:nth-child(6){
+          background-color: #FF5959;
+         }
+         &:nth-child(7){
+            background-color: #FF8B59;
+         }
+         &:nth-child(8){
+          background-color: #FFCD59;
+         }
+         &:nth-child(9){
+            background-color: #E1FF59;
+           }
+           &:nth-child(10){
+              background-color: #59FF91;
+           }
+           &:nth-child(11){
+            background-color: #59FFF9;
+           }
+
+
+        &:hover, &:focus-within{
+            outline: 0.5rem solid var(--shape-button);
+            border-radius: 999px;
+        }
+
+     
+    }
+ }
+
